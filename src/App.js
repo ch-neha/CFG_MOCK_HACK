@@ -1,11 +1,15 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
+import './App.css';
+import RegisterPage from './Components/RegisterPage'
+import Home from './Components/Home'
 
 
 
-const App=()=>
+function App()
 {
   return(
+  
     <div className="container-fluid">
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
@@ -30,12 +34,13 @@ const App=()=>
           <NavLink className="nav-link" to=''>Content</NavLink>
         </li>
       </ul>
-    </div>
-  </div>
-</nav>
-</div>
+      </div>
+      </div>
+      </nav>
+      </div>
+    );
+    }
 
-  )
-}
+
 
 export default App;
