@@ -1,0 +1,30 @@
+.labelinput{
+    margin: 5px;
+}
+label{
+    display: flex;
+    justify-content: start;
+}
+input.submit{
+    font-size: large;
+    margin:10px;
+    width:70px;
+    height:30px;
+}
+input{
+    display: flex;
+    justify-content: start;
+    width: 500px;
+    height:20px;
+}
+.heading{
+    padding:10px
+}
+
+form{
+    background-color: rgb(251, 232, 195);
+    color:black;
+    padding:10px;
+    margin:10px;
+    border:5px solid orange;
+}
