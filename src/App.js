@@ -1,8 +1,8 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom'
+import {NavLink,Routes,Route} from 'react-router-dom'
 import './App.css';
-import RegisterPage from './Components/RegisterPage'
 import Home from './Components/Home'
+import RegisterPage from './Components/RegisterPage'
 
 
 
@@ -37,6 +37,10 @@ function App()
       </div>
       </div>
       </nav>
+
+
+
+
       </div>
     );
     }
