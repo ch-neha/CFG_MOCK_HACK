@@ -3,8 +3,8 @@ import {NavLink,Routes,Route} from 'react-router-dom'
 import './App.css';
 import Home from './Components/Home'
 import RegisterPage from './Components/RegisterPage'
-
-
+import Login from './Components/Login/login'
+import Contactus from './Components/Contactus'
 
 function App()
 {
@@ -25,19 +25,26 @@ function App()
           <NavLink className="nav-link" to=''>Home</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to=''>Login</NavLink>
+          <NavLink className="nav-link" to='login'>Login</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to=''>Sign Up</NavLink>
+          <NavLink className="nav-link" to='register'>Sign Up</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to=''>Content</NavLink>
+          <NavLink className="nav-link" to='contactus'>Contact us</NavLink>
         </li>
       </ul>
       </div>
       </div>
       </nav>
 
+      <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="/login" element={<Login />}/>
+            <Route path="/register" element={<RegisterPage/>}/>
+            <Route path="/contactus" element={<Contactus/>}/>
+      </Routes>
+      
 
 
 
